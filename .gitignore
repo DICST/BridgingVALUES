@@ -1,0 +1,18 @@
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# Ferramentas locais
+.claude/
+.agents/
+
+# Dados brutos e vídeo: ficam fora do repositório.
+# Os ZIPs prontos para download ficam em downloads/ (versionados).
+dados_espaciais/
+assets/videos/
+archive/

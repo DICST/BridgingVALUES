@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atlas territorial do Parque Nacional do Boqueirão da Onça, desenvolvido pelo INPE no âmbito do projeto BridgingVALUES. Acesse mapas interativos e dados espaciais.">
+  <meta name="robots" content="index, follow">
+    <!-- GitHub Pages não permite headers HTTP: CSP e referrer via <meta> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src https://docs.google.com https://player.vimeo.com; form-action https://docs.google.com; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+      <link rel="alternate" hreflang="pt-BR" href="./">
+  <link rel="alternate" hreflang="en" href="en/">
+    <title>BridgingVALUES - Mosaico de UCs Boqueirão da Onça — INPE</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo_inpe.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo_inpe.png">
+  <link rel="apple-touch-icon" href="assets/images/logo_inpe.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css?v=1794315405">
+</head>
+<body>
+<nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+  <div class="container">
+    <div class="nav__inner">
+
+      <a href="#hero" class="nav__brand" aria-label="Início — BridgingVALUES - Mosaico de UCs Boqueirão da Onça">
+        <span class="nav__brand-name">BridgingVALUES - Mosaico de UCs Boqueirão da Onça</span>
+        <span class="nav__brand-sub">INPE · BridgingVALUES</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a class="nav__link" href="#sobre">Sobre</a></li>
+        <li><a class="nav__link" href="#mapas">Mapas</a></li>
+        <li class="nav__dropdown">
+          <a class="nav__link nav__dropdown-toggle" href="#download">
+            Dados Espaciais
+            <svg class="nav__dropdown-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg>
+          </a>
+          <div class="nav__dropdown-menu">
+            <a href="#download">Baixar Dados</a>
+            <a href="#como-usar">Como Usar</a>
+          </div>
+        </li>
+        <li><a class="nav__link" href="#filme">Filme</a></li>
+        <li><a class="nav__link" href="#publicacoes">Publicações</a></li>
+      </ul>
+
+            <a
+        class="nav__lang"
+        id="lang-switch"
+        href="en/"
+        hreflang="en"
+        lang="en"
+        aria-label="View this site in English"
+        title="English"
+      >
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        EN      </a>
+
+      <button
+        class="nav__hamburger"
+        id="hamburger"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+  <a href="#sobre">Sobre o Projeto</a>
+  <a href="#mapas">Mapas Interativos</a>
+  <a href="#download">Dados Espaciais</a>
+  <a href="#como-usar">Como Usar</a>
+  <a href="#filme">Filme</a>
+  <a href="#publicacoes">Publicações</a>
+</div>
+<section class="hero" id="hero" aria-label="Cabeçalho principal">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__dots" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__content">
+
+      <div class="hero__badges">
+        <span class="hero__badge hero__badge--amber">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
+          INPE
+        </span>
+        <span class="hero__badge">BridgingVALUES</span>
+        <span class="hero__badge">Parque Nacional · Bahia</span>
+      </div>
+
+      <p class="hero__kicker">Projeto BridgingVALUES</p>
+
+      <h1 class="hero__title">
+        Mosaico de Unidades de Conservação do<br>
+        Boqueirão da <span>Onça</span>
+      </h1>
+
+      <p class="hero__text">
+        Acesse os relatórios e publicações vinculados ao Projeto BridgingVALUES no Brasil, 
+        além dos mapas interativos e dados espaciais gerados para a região do Mosaico 
+        de Unidades de Conservação do Boqueirão da Onça.
+      </p>
+
+      <div class="hero__ctas" style="flex-wrap: wrap;">
+        <a href="#mapas" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          Explorar Mapas
+        </a>
+        <a href="#download" class="btn btn--outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Baixar Dados Espaciais
+        </a>
+        <a href="#filme" class="btn btn--outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+          Assista ao Filme
+        </a>
+        <a href="#publicacoes" class="btn btn--outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          Publicações
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-num">7</div>
+          <div class="hero__stat-label">Mapas interativos</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">46</div>
+          <div class="hero__stat-label">Datasets disponíveis</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">228</div>
+          <div class="hero__stat-label">Arquivos para download</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">6</div>
+          <div class="hero__stat-label">Países no projeto</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Role para baixo</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+<section class="section" id="sobre" aria-labelledby="sobre-title">
+  <div class="container">
+    <p class="section-label">Apresentação</p>
+
+    <div class="sobre__grid">
+
+      <div class="sobre__text">
+        <h2 class="section-title" id="sobre-title">
+          Dados territoriais para comunidades e gestores
+        </h2>
+
+        <p>
+          Esta página disponibiliza para as instituições e comunidades locais os relatórios e publicações vinculados ao Projeto BridgingVALUES no Brasil, além dos mapas interativos e dados espaciais gerados para a região do Mosaico de Unidades de Conservação do Boqueirão da Onça.
+        </p>
+        <p>
+          O atlas digital (mapas interativos e dados espaciais) foi desenvolvido pelo INPE em resposta a uma demanda das próprias comunidades, definida de forma participativa em oficinas realizadas na região. A iniciativa busca fortalecer atores locais por meio do acesso ao conhecimento e da organização de informações sobre o território.
+        </p>
+        <p>
+          O conteúdo está organizado em diferentes camadas de informação e temas, permitindo a visualização dos dados espaciais de forma simples e integrada. Além disso, é possível aplicar filtros e realizar o download dos dados espaciais para uso em ferramentas de geoprocessamento (SIG).
+        </p>
+
+        <blockquote class="sobre__quote fade-in">
+          <p class="sobre__quote-text">
+            "O projeto envolveu oficinas, mapeamento de atores e construção coletiva de soluções,
+            buscando compreender conflitos, identificar caminhos futuros e propor ações que
+            conciliem a conservação da biodiversidade com a equidade social."
+          </p>
+          <footer class="sobre__quote-author">— Equipe do projeto</footer>
+        </blockquote>
+
+        <p class="fade-in sobre__team">
+          <a href="#equipe" class="sobre__team-link">
+            Conheça a equipe responsável pelo projeto
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </a>
+        </p>
+      </div>
+
+      <aside class="sobre__card fade-in" aria-label="Projeto BridgingVALUES">
+        <h3 class="sobre__card-title">Projeto BridgingVALUES</h3>
+        <p class="sobre__card-text">
+          O Atlas foi desenvolvido no contexto do projeto internacional
+          <strong class="text-amber">BridgingVALUES</strong>, que investiga como as políticas e
+          estratégias globais de conservação da biodiversidade impactam os territórios locais —
+          considerando que esses efeitos variam entre diferentes regiões do mundo.
+        </p>
+        <p class="sobre__card-text">
+          O projeto adotou uma abordagem participativa e interdisciplinar, com estudos de caso
+          em seis países, incluindo o Brasil. A pesquisa brasileira foi conduzida no mosaico de
+          áreas protegidas do Boqueirão da Onça (BA).
+        </p>
+        <a
+          href="https://www.bridgingvalues.ch/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sobre__card-link"
+          aria-label="Acesse o site do projeto BridgingVALUES (abre em nova aba)"
+        >
+          Acesse o site do projeto
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </aside>
+
+    </div>
+
+
+
+  </div>
+</section>
+<section class="section mapas" id="mapas" aria-labelledby="mapas-title">
+  <div class="container">
+    <p class="section-label">Mapas Interativos</p>
+    <h2 class="section-title" id="mapas-title">Explore o território por tema</h2>
+    <p class="section-subtitle">
+      Navegue e explore os dados espacialmente clicando sobre um dos mapas interativos, separados por tema. Em caso de dúvidas sobre como utilizar os mapas, navegue para a seção <a href="#como-usar" class="mapas__link-guia"><strong>Guia Rápido</strong></a>.
+    </p>
+
+    <div class="mapas__grid">
+            <article
+        class="map-card map-card--area-estudo fade-in"
+        aria-label="Mapa de Área de Estudo"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">📍</div>
+          <p class="map-card__theme">Geral / Contexto</p>
+          <h3 class="map-card__title">Área de Estudo</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Delimitação da área de estudo envolvendo as comunidades, mosaico de áreas protegidas e municípios próximos.</p>
+          <a
+            href="mapas/area-estudo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Área de Estudo em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+            <article
+        class="map-card map-card--comunidades fade-in"
+        aria-label="Mapa de Comunidades Tradicionais e Áreas Protegidas"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">🛡️</div>
+          <p class="map-card__theme">Sociedade &amp; Conservação</p>
+          <h3 class="map-card__title">Comunidades Tradicionais e Áreas Protegidas</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Associações de fundo e fecho de pasto, comunidades quilombolas e indígenas e áreas protegidas.</p>
+          <a
+            href="mapas/comunidades-protecao/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Comunidades Tradicionais e Áreas Protegidas em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+            <article
+        class="map-card map-card--empreendimentos fade-in"
+        aria-label="Mapa de Empreendimentos"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">⚡</div>
+          <p class="map-card__theme">Energia &amp; Infraestrutura</p>
+          <h3 class="map-card__title">Empreendimentos</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Parques eólicos, usinas solares, hidrelétricas e mineração.</p>
+          <a
+            href="mapas/empreendimentos/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Empreendimentos em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+            <article
+        class="map-card map-card--geologia fade-in"
+        aria-label="Mapa de Geologia"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">🪨</div>
+          <p class="map-card__theme">Geociências</p>
+          <h3 class="map-card__title">Geologia</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Sítios arqueológicos, mineração, tipos de rocha, declividade e curvas de nível.</p>
+          <a
+            href="mapas/geologia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Geologia em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+            <article
+        class="map-card map-card--hidrografia fade-in"
+        aria-label="Mapa de Hidrografia"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">💧</div>
+          <p class="map-card__theme">Recursos Hídricos</p>
+          <h3 class="map-card__title">Hidrografia</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Rede de drenagem, massas de água, limites de bacias hidrográficas e outorgas de uso da água federais e estaduais.</p>
+          <a
+            href="mapas/hidrografia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Hidrografia em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+            <article
+        class="map-card map-card--imoveis fade-in"
+        aria-label="Mapa de Imóveis Rurais"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">🗺️</div>
+          <p class="map-card__theme">Fundiário</p>
+          <h3 class="map-card__title">Imóveis Rurais</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Imóveis rurais certificados, assentamentos, sobreposições com o Cadastro Ambiental Rural e imóveis do CAR.</p>
+          <a
+            href="mapas/imoveis/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Imóveis Rurais em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+            <article
+        class="map-card map-card--uso fade-in"
+        aria-label="Mapa de Uso e Cobertura da Terra"
+      >
+        <div class="map-card__header">
+          <div class="map-card__icon" aria-hidden="true">🌿</div>
+          <p class="map-card__theme">Meio Ambiente</p>
+          <h3 class="map-card__title">Uso e Cobertura da Terra</h3>
+        </div>
+        <div class="map-card__body">
+          <p class="map-card__desc">Classes de uso e cobertura, degradação da terra, desmatamento, queimadas, qualidade da pastagem e potencialidade ao desenvolvimento agrícola.</p>
+          <a
+            href="mapas/uso/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-card__btn"
+            aria-label="Abrir mapa de Uso e Cobertura da Terra em nova aba"
+          >
+            Abrir Mapa
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+          </div>
+  </div>
+</section>
+<section class="section section--alt" id="download" aria-labelledby="download-title">
+  <div class="container">
+    <p class="section-label">Dados Espaciais</p>
+    <h2 class="section-title" id="download-title">Download dos dados espaciais</h2>
+    <p class="section-subtitle" style="margin-bottom: 1.5rem;">
+      Baixe os shapefiles e arquivos de projeto do QGIS, organizados pelo BridgingVALUES, para uso em softwares de SIG, como QGIS e ArcGIS.
+      Os dados espaciais estão disponíveis além da área de estudo representada nos mapas interativos, compreendendo as bacias hidrográficas e respectivos comitês dos rios Verde-Jacaré, do rio Salitre e dos rios Baianos do Entorno do Lago de Sobradinho, que englobam o Mosaico de Unidades de Conservação do Boqueirão da Onça.
+      Os metadados, envolvendo uma descrição e as fontes dos dados espaciais utilizados no projeto, estão disponíveis para download no ícone abaixo.
+    </p>
+
+    <!-- Bloco de download dos Metadados -->
+    <div class="download__metadata-card fade-in">
+      <div class="metadata-card__content">
+        <span class="metadata-card__icon" aria-hidden="true">📊</span>
+        <div class="metadata-card__info">
+          <h3 class="metadata-card__title">Planilha de Metadados</h3>
+          <p class="metadata-card__desc">Contém a descrição detalhada e as fontes de todos os dados espaciais do projeto.</p>
+        </div>
+      </div>
+      <a href="assets/metadados/Atlas%20Bridging%20Values%20BR%20-%20Fontes%20dos%20dados%20espaciais.xlsx" class="btn btn--primary metadata-card__btn" download>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        BAIXAR METADADOS (.xlsx)
+      </a>
+    </div>
+
+    <div class="download__header">
+      <div class="download__search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <label for="file-search" class="sr-only">Buscar dataset</label>
+        <input
+          type="search"
+          id="file-search"
+          class="download__search"
+          placeholder="Buscar dataset… ex: geologia, drenagem, estradas"
+          autocomplete="off"
+          spellcheck="false"
+        >
+      </div>
+      <p class="download__count" id="dataset-count" aria-live="polite">
+        <strong>46</strong> datasets encontrados
+      </p>
+    </div>
+
+    <div class="download__info" role="note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span>
+        <strong>Como usar os arquivos:</strong> Um shapefile é composto por múltiplos arquivos
+        com o mesmo nome base. Você pode usar o botão <strong>BAIXAR TUDO</strong> para obter 
+        todos os arquivos de um dataset compactados em um único arquivo <code>.zip</code>, ou clicar 
+        na extensão desejada para baixar arquivos individualmente.
+      </span>
+    </div>
+
+        <div class="download__table-wrap">
+      <table class="download__table" aria-label="Lista de datasets disponíveis para download">
+        <thead>
+          <tr>
+            <th scope="col">Dataset</th>
+            <th scope="col">Arquivos disponíveis</th>
+            <th scope="col">Tamanho total</th>
+          </tr>
+        </thead>
+        <tbody>
+                    <tr class="dataset-row" data-name="aerogeradores">
+            <td>
+              <div class="dataset-name">Aerogeradores</div>
+              <div class="dataset-raw">Aerogeradores</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Aerogeradores.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Aerogeradores (.zip)"
+                  aria-label="Baixar todos (.zip) — Aerogeradores"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">168 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="areas_prioritarias_conservacao">
+            <td>
+              <div class="dataset-name">Areas Prioritarias Conservacao</div>
+              <div class="dataset-raw">Areas_prioritarias_conservacao</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Areas_prioritarias_conservacao.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Areas Prioritarias Conservacao (.zip)"
+                  aria-label="Baixar todos (.zip) — Areas Prioritarias Conservacao"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">211 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="assentamentos">
+            <td>
+              <div class="dataset-name">Assentamentos</div>
+              <div class="dataset-raw">Assentamentos</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Assentamentos.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Assentamentos (.zip)"
+                  aria-label="Baixar todos (.zip) — Assentamentos"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">41 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="associacoes_de_comunidades_ffp">
+            <td>
+              <div class="dataset-name">Associacoes DE Comunidades Ffp</div>
+              <div class="dataset-raw">Associacoes_de_comunidades_FFP</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Associacoes_de_comunidades_FFP.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Associacoes DE Comunidades Ffp (.zip)"
+                  aria-label="Baixar todos (.zip) — Associacoes DE Comunidades Ffp"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">6 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="car_imoveis_areas_sobreposicoes">
+            <td>
+              <div class="dataset-name">CAR Imoveis Areas Sobreposicoes</div>
+              <div class="dataset-raw">CAR_imoveis_areas_sobreposicoes</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/CAR_imoveis_areas_sobreposicoes.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de CAR Imoveis Areas Sobreposicoes (.zip)"
+                  aria-label="Baixar todos (.zip) — CAR Imoveis Areas Sobreposicoes"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">22,4 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="centrais_geradoras_eolicas">
+            <td>
+              <div class="dataset-name">Centrais Geradoras Eolicas</div>
+              <div class="dataset-raw">Centrais_Geradoras_Eolicas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Centrais_Geradoras_Eolicas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Centrais Geradoras Eolicas (.zip)"
+                  aria-label="Baixar todos (.zip) — Centrais Geradoras Eolicas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">59 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="centrais_geradoras_solares_fotovoltaicas">
+            <td>
+              <div class="dataset-name">Centrais Geradoras Solares Fotovoltaicas</div>
+              <div class="dataset-raw">Centrais_Geradoras_Solares_Fotovoltaicas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Centrais_Geradoras_Solares_Fotovoltaicas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Centrais Geradoras Solares Fotovoltaicas (.zip)"
+                  aria-label="Baixar todos (.zip) — Centrais Geradoras Solares Fotovoltaicas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">36 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="cidades">
+            <td>
+              <div class="dataset-name">Cidades</div>
+              <div class="dataset-raw">Cidades</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Cidades.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Cidades (.zip)"
+                  aria-label="Baixar todos (.zip) — Cidades"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">2 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="comunidades_entrevistas">
+            <td>
+              <div class="dataset-name">Comunidades Entrevistas</div>
+              <div class="dataset-raw">Comunidades_entrevistas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Comunidades_entrevistas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Comunidades Entrevistas (.zip)"
+                  aria-label="Baixar todos (.zip) — Comunidades Entrevistas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">2 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="curvas_nivel_poligono_mdt_150_m">
+            <td>
+              <div class="dataset-name">Curvas Nivel Poligono MDT 150 M</div>
+              <div class="dataset-raw">Curvas_nivel_poligono_MDT_150_m</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Curvas_nivel_poligono_MDT_150_m.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Curvas Nivel Poligono MDT 150 M (.zip)"
+                  aria-label="Baixar todos (.zip) — Curvas Nivel Poligono MDT 150 M"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">44,7 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="declividade_e_classes_de_relevo">
+            <td>
+              <div class="dataset-name">Declividade E Classes DE Relevo</div>
+              <div class="dataset-raw">Declividade_e_classes_de_relevo</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Declividade_e_classes_de_relevo.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Declividade E Classes DE Relevo (.zip)"
+                  aria-label="Baixar todos (.zip) — Declividade E Classes DE Relevo"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">409 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="desmatamento">
+            <td>
+              <div class="dataset-name">Desmatamento</div>
+              <div class="dataset-raw">Desmatamento</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Desmatamento.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Desmatamento (.zip)"
+                  aria-label="Baixar todos (.zip) — Desmatamento"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">23,3 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="drenagem">
+            <td>
+              <div class="dataset-name">Drenagem</div>
+              <div class="dataset-raw">Drenagem</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Drenagem.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Drenagem (.zip)"
+                  aria-label="Baixar todos (.zip) — Drenagem"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">2,0 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="estradas_e_caminhos">
+            <td>
+              <div class="dataset-name">Estradas E Caminhos</div>
+              <div class="dataset-raw">Estradas_e_caminhos</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Estradas_e_caminhos.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Estradas E Caminhos (.zip)"
+                  aria-label="Baixar todos (.zip) — Estradas E Caminhos"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">13,1 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="garimpo_da_quixaba">
+            <td>
+              <div class="dataset-name">Garimpo DA Quixaba</div>
+              <div class="dataset-raw">Garimpo_da_Quixaba</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Garimpo_da_Quixaba.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Garimpo DA Quixaba (.zip)"
+                  aria-label="Baixar todos (.zip) — Garimpo DA Quixaba"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">902 B</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="geologia_tipos_de_rochas">
+            <td>
+              <div class="dataset-name">Geologia Tipos DE Rochas</div>
+              <div class="dataset-raw">Geologia_tipos_de_rochas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Geologia_tipos_de_rochas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Geologia Tipos DE Rochas (.zip)"
+                  aria-label="Baixar todos (.zip) — Geologia Tipos DE Rochas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">940 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="imoveis_rurais_sigef">
+            <td>
+              <div class="dataset-name">Imoveis Rurais SIGEF</div>
+              <div class="dataset-raw">Imoveis_rurais_SIGEF</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Imoveis_rurais_SIGEF.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Imoveis Rurais SIGEF (.zip)"
+                  aria-label="Baixar todos (.zip) — Imoveis Rurais SIGEF"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">2,2 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="limites_bacias_hidrograficas">
+            <td>
+              <div class="dataset-name">Limites Bacias Hidrograficas</div>
+              <div class="dataset-raw">Limites_bacias_hidrograficas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Limites_bacias_hidrograficas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Limites Bacias Hidrograficas (.zip)"
+                  aria-label="Baixar todos (.zip) — Limites Bacias Hidrograficas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">132 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="linhas_de_transmissao">
+            <td>
+              <div class="dataset-name">Linhas DE Transmissao</div>
+              <div class="dataset-raw">Linhas_de_transmissao</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Linhas_de_transmissao.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Linhas DE Transmissao (.zip)"
+                  aria-label="Baixar todos (.zip) — Linhas DE Transmissao"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">290 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="localidades">
+            <td>
+              <div class="dataset-name">Localidades</div>
+              <div class="dataset-raw">Localidades</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Localidades.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Localidades (.zip)"
+                  aria-label="Baixar todos (.zip) — Localidades"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">19 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_area_estudo">
+            <td>
+              <div class="dataset-name">Mapa Internet Area Estudo</div>
+              <div class="dataset-raw">Mapa_internet_area_estudo</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_area_estudo.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Area Estudo (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Area Estudo"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">34 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_empreendimentos">
+            <td>
+              <div class="dataset-name">Mapa Internet Empreendimentos</div>
+              <div class="dataset-raw">Mapa_internet_empreendimentos</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_empreendimentos.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Empreendimentos (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Empreendimentos"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">108 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_geologia">
+            <td>
+              <div class="dataset-name">Mapa Internet Geologia</div>
+              <div class="dataset-raw">Mapa_internet_geologia</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_geologia.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Geologia (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Geologia"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">98 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_hidrografia">
+            <td>
+              <div class="dataset-name">Mapa Internet Hidrografia</div>
+              <div class="dataset-raw">Mapa_internet_hidrografia</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_hidrografia.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Hidrografia (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Hidrografia"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">93 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_imoveis_rurais">
+            <td>
+              <div class="dataset-name">Mapa Internet Imoveis Rurais</div>
+              <div class="dataset-raw">Mapa_internet_imoveis_rurais</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_imoveis_rurais.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Imoveis Rurais (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Imoveis Rurais"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">63 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_protecao_ambiental_comunidades">
+            <td>
+              <div class="dataset-name">Mapa Internet Protecao Ambiental Comunidades</div>
+              <div class="dataset-raw">Mapa_internet_protecao_ambiental_comunidades</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_protecao_ambiental_comunidades.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Protecao Ambiental Comunidades (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Protecao Ambiental Comunidades"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">78 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="mapa_internet_uso_cobertura">
+            <td>
+              <div class="dataset-name">Mapa Internet Uso Cobertura</div>
+              <div class="dataset-raw">Mapa_internet_uso_cobertura</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Mapa_internet_uso_cobertura.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Mapa Internet Uso Cobertura (.zip)"
+                  aria-label="Baixar todos (.zip) — Mapa Internet Uso Cobertura"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qgz</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">91 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="massas_dagua">
+            <td>
+              <div class="dataset-name">Massas Dagua</div>
+              <div class="dataset-raw">Massas_dagua</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Massas_dagua.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Massas Dagua (.zip)"
+                  aria-label="Baixar todos (.zip) — Massas Dagua"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">316 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="municipios_proximos_ucs">
+            <td>
+              <div class="dataset-name">Municipios Proximos Ucs</div>
+              <div class="dataset-raw">Municipios_proximos_UCs</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Municipios_proximos_UCs.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Municipios Proximos Ucs (.zip)"
+                  aria-label="Baixar todos (.zip) — Municipios Proximos Ucs"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">194 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="numero_focos_queimadas">
+            <td>
+              <div class="dataset-name">Numero Focos Queimadas</div>
+              <div class="dataset-raw">Numero_focos_queimadas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Numero_focos_queimadas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Numero Focos Queimadas (.zip)"
+                  aria-label="Baixar todos (.zip) — Numero Focos Queimadas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">85 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="outorgas_estados_subterraneas">
+            <td>
+              <div class="dataset-name">Outorgas Estados Subterraneas</div>
+              <div class="dataset-raw">Outorgas_Estados_Subterraneas</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Outorgas_Estados_Subterraneas.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Outorgas Estados Subterraneas (.zip)"
+                  aria-label="Baixar todos (.zip) — Outorgas Estados Subterraneas"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">92 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="outorgas_estados_superficiais">
+            <td>
+              <div class="dataset-name">Outorgas Estados Superficiais</div>
+              <div class="dataset-raw">Outorgas_Estados_Superficiais</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Outorgas_Estados_Superficiais.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Outorgas Estados Superficiais (.zip)"
+                  aria-label="Baixar todos (.zip) — Outorgas Estados Superficiais"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">7 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="outorgas_federais">
+            <td>
+              <div class="dataset-name">Outorgas Federais</div>
+              <div class="dataset-raw">Outorgas_Federais</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Outorgas_Federais.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Outorgas Federais (.zip)"
+                  aria-label="Baixar todos (.zip) — Outorgas Federais"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">119 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="parques_eolicos">
+            <td>
+              <div class="dataset-name">Parques Eolicos</div>
+              <div class="dataset-raw">Parques_Eolicos</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Parques_Eolicos.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Parques Eolicos (.zip)"
+                  aria-label="Baixar todos (.zip) — Parques Eolicos"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">294 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="potencialidade_agricola_natural">
+            <td>
+              <div class="dataset-name">Potencialidade Agricola Natural</div>
+              <div class="dataset-raw">Potencialidade_agricola_natural</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Potencialidade_agricola_natural.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Potencialidade Agricola Natural (.zip)"
+                  aria-label="Baixar todos (.zip) — Potencialidade Agricola Natural"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">4,3 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="processos_minerarios">
+            <td>
+              <div class="dataset-name">Processos Minerarios</div>
+              <div class="dataset-raw">Processos_minerarios</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Processos_minerarios.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Processos Minerarios (.zip)"
+                  aria-label="Baixar todos (.zip) — Processos Minerarios"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">869 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="qualidade_da_pastagem">
+            <td>
+              <div class="dataset-name">Qualidade DA Pastagem</div>
+              <div class="dataset-raw">Qualidade_da_pastagem</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Qualidade_da_pastagem.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Qualidade DA Pastagem (.zip)"
+                  aria-label="Baixar todos (.zip) — Qualidade DA Pastagem"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">237 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="sitios_arqueologicos">
+            <td>
+              <div class="dataset-name">Sitios Arqueologicos</div>
+              <div class="dataset-raw">Sitios_arqueologicos</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Sitios_arqueologicos.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Sitios Arqueologicos (.zip)"
+                  aria-label="Baixar todos (.zip) — Sitios Arqueologicos"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">81 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="sitios_arqueologicos_mapeamento_mariluce">
+            <td>
+              <div class="dataset-name">Sitios Arqueologicos Mapeamento Mariluce</div>
+              <div class="dataset-raw">Sitios_arqueologicos_mapeamento_Mariluce</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Sitios_arqueologicos_mapeamento_Mariluce.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Sitios Arqueologicos Mapeamento Mariluce (.zip)"
+                  aria-label="Baixar todos (.zip) — Sitios Arqueologicos Mapeamento Mariluce"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">10 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="trajetorias_de_degradacao">
+            <td>
+              <div class="dataset-name">Trajetorias DE Degradacao</div>
+              <div class="dataset-raw">Trajetorias_de_degradacao</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Trajetorias_de_degradacao.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Trajetorias DE Degradacao (.zip)"
+                  aria-label="Baixar todos (.zip) — Trajetorias DE Degradacao"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">3,8 MB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="trecho_rodoviario_estadual">
+            <td>
+              <div class="dataset-name">Trecho Rodoviario Estadual</div>
+              <div class="dataset-raw">Trecho_Rodoviario_Estadual</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Trecho_Rodoviario_Estadual.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Trecho Rodoviario Estadual (.zip)"
+                  aria-label="Baixar todos (.zip) — Trecho Rodoviario Estadual"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">38 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="trecho_rodoviario_federal">
+            <td>
+              <div class="dataset-name">Trecho Rodoviario Federal</div>
+              <div class="dataset-raw">Trecho_Rodoviario_Federal</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Trecho_Rodoviario_Federal.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Trecho Rodoviario Federal (.zip)"
+                  aria-label="Baixar todos (.zip) — Trecho Rodoviario Federal"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">387 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="unidades_conservacao">
+            <td>
+              <div class="dataset-name">Unidades Conservacao</div>
+              <div class="dataset-raw">Unidades_Conservacao</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Unidades_Conservacao.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Unidades Conservacao (.zip)"
+                  aria-label="Baixar todos (.zip) — Unidades Conservacao"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">71 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="unidades_conservacao_nas_bacias">
+            <td>
+              <div class="dataset-name">Unidades Conservacao Nas Bacias</div>
+              <div class="dataset-raw">Unidades_Conservacao_nas_bacias</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Unidades_Conservacao_nas_bacias.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Unidades Conservacao Nas Bacias (.zip)"
+                  aria-label="Baixar todos (.zip) — Unidades Conservacao Nas Bacias"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-other" title="Incluído no .zip">.qix</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">112 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="usina_hidreletrica">
+            <td>
+              <div class="dataset-name">Usina Hidreletrica</div>
+              <div class="dataset-raw">Usina_Hidreletrica</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Usina_Hidreletrica.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Usina Hidreletrica (.zip)"
+                  aria-label="Baixar todos (.zip) — Usina Hidreletrica"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-sbn" title="Incluído no .zip">.sbn</span>
+                                                                <span class="ext-badge ext-sbx" title="Incluído no .zip">.sbx</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                                                <span class="ext-badge ext-xml" title="Incluído no .zip">.xml</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">15 KB</span>
+            </td>
+          </tr>
+                    <tr class="dataset-row" data-name="uso_e_cobertura_da_terra">
+            <td>
+              <div class="dataset-name">Uso E Cobertura DA Terra</div>
+              <div class="dataset-raw">Uso_e_cobertura_da_terra</div>
+            </td>
+            <td>
+              <div class="ext-badges">
+                                <a
+                  href="downloads/Uso_e_cobertura_da_terra.zip"
+                  class="ext-badge ext-zip-all"
+                  title="Baixar todos os arquivos de Uso E Cobertura DA Terra (.zip)"
+                  aria-label="Baixar todos (.zip) — Uso E Cobertura DA Terra"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  BAIXAR TUDO
+                </a>
+                                                <span class="ext-badge ext-cpg" title="Incluído no .zip">.cpg</span>
+                                                                <span class="ext-badge ext-dbf" title="Incluído no .zip">.dbf</span>
+                                                                <span class="ext-badge ext-prj" title="Incluído no .zip">.prj</span>
+                                                                <span class="ext-badge ext-qmd" title="Incluído no .zip">.qmd</span>
+                                                                <span class="ext-badge ext-shp" title="Incluído no .zip">.shp</span>
+                                                                <span class="ext-badge ext-shx" title="Incluído no .zip">.shx</span>
+                                              </div>
+            </td>
+            <td>
+              <span class="dataset-size">3,5 MB</span>
+            </td>
+          </tr>
+                  </tbody>
+      </table>
+
+      <div class="no-results" id="no-results" role="status">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+        <p>Nenhum dataset encontrado para "<span id="no-results-query"></span>".</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section class="section" id="como-usar" aria-labelledby="como-usar-title">
+  <div class="container">
+    <p class="section-label">Guia Rápido</p>
+    <h2 class="section-title" id="como-usar-title">Como usar o Atlas</h2>
+    <p class="section-subtitle">Instruções para consulta dos mapas e download dos dados espaciais.</p>
+
+    <div class="como-usar__grid">
+
+      <div class="fade-in">
+        <h3 class="como-usar__block-title">
+          <span class="como-usar__block-icon" aria-hidden="true">🗺️</span>
+          Consultando os Mapas Interativos
+        </h3>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <p class="step__text">Na seção <strong>Mapas Interativos</strong>, clique no botão <strong>"Abrir Mapa"</strong> do tema desejado;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <p class="step__text">O mapa abrirá em <strong>uma nova aba</strong> do navegador com todas as camadas disponíveis;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <p class="step__text">Clique no <strong>ícone de informação à direita (i)</strong> para ler a descrição sobre o mapa;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">4</span>
+            <p class="step__text">Clique no <strong>ícone de camadas à direita (em azul)</strong> para ativar ou desativar as camadas sobre o tema;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">5</span>
+            <p class="step__text">Dê zoom e clique sobre os elementos do mapa para ver <strong>informações detalhadas</strong> sobre os atributos das camadas na área selecionada;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">6</span>
+            <p class="step__text">Utilize a <strong>legenda</strong> para interpretar as cores e símbolos de cada camada.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="fade-in">
+        <h3 class="como-usar__block-title">
+          <span class="como-usar__block-icon" aria-hidden="true">⬇️</span>
+          Baixando os Dados Espaciais
+        </h3>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <p class="step__text">Na seção <strong>Dados Espaciais</strong>, use a <strong>barra de busca</strong> para encontrar o dado de interesse;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <p class="step__text">Cada linha corresponde a uma <strong>camada (shapefile)</strong> ou projeto do QGIS (<code>.qgz</code>);</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <p class="step__text">Baixe todos os arquivos do mesmo nome ou o <strong>arquivo zip (clicando em "Baixar tudo")</strong>. No caso do shapefile, as extensões <code>.shp</code>, <code>.dbf</code>, <code>.shx</code> e <code>.prj</code> são indispensáveis;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">4</span>
+            <p class="step__text">Para abrir os projetos do QGIS corretamente, coloque todos os arquivos (shapefiles e projetos) em uma <strong>mesma pasta</strong>;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">5</span>
+            <p class="step__text">Os <strong>projetos do QGIS</strong> permitem visualizar as camadas por tema com a simbologia organizada pela equipe do projeto;</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">6</span>
+            <p class="step__text">Você também pode abrir os shapefiles em outro <strong>software de SIG</strong> de sua preferência, mas as simbologias não serão preservadas.</p>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="section filme" id="filme" aria-labelledby="filme-title">
+  <div class="container">
+    <p class="section-label">Filme</p>
+    <h2 class="section-title" id="filme-title">
+      Vozes da Caatinga
+    </h2>
+    <p class="section-subtitle">
+      Assista ao documentário produzido pelo Projeto BridgingVALUES retratando a realidade, os desafios e as percepções das comunidades do Boqueirão da Onça.
+    </p>
+
+    <div class="filme__video-container fade-in">
+                    <p class="filme__placeholder">O vídeo estará disponível em breve.</p>
+                  </div>
+  </div>
+</section>
+<section class="section publicacoes" id="publicacoes" aria-labelledby="publicacoes-title">
+  <div class="container">
+    <p class="section-label">Publicações</p>
+    <h2 class="section-title" id="publicacoes-title">
+      Relatórios, cartilha e materiais do projeto
+    </h2>
+    <p class="section-subtitle">
+      Acesse as produções científicas, cartilhas e relatórios técnicos elaborados no âmbito do Projeto BridgingVALUES no Brasil.
+    </p>
+
+    <!-- Bloco 1: Cartilha (Vem em primeiro lugar em quadrado separado / destaque) -->
+    <div class="pub-section-block">
+      <div class="pub-card pub-card--featured fade-in">
+        <div class="pub-card__content">
+          <span class="pub-card__tag pub-card__tag--featured">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Cartilha Didática
+          </span>
+          <h3 class="pub-card__title pub-card__title--featured">Cartilha</h3>
+          <p class="pub-card__desc pub-card__desc--featured">
+            Caminhos para futuros desejados: Um guia para co-construção de planos de ação e cenários utilizando a abordagem 3H-CLD
+          </p>
+        </div>
+        <div class="pub-card__action">
+          <a 
+            href="assets/relatorios/1_Cartilha%203H-CLD.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn--primary pub-card__btn"
+            aria-label="Baixar Cartilha em PDF - Versão em Português (abre em nova aba)"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Versão em Português (PDF)
+          </a>
+          <a 
+            href="assets/relatorios/1_Cartilha%203H-CLD_EN.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn--pub-secondary pub-card__btn"
+            aria-label="Baixar Cartilha em PDF - English Version (abre em nova aba)"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            English Version (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bloco 2: Relatórios do Projeto -->
+    <div class="pub-section-block">
+      <div class="pub-block-header">
+        <h3 class="pub-block-title">Relatórios do Projeto</h3>
+        <p class="pub-block-desc">Relatórios elaborados pela equipe do Projeto BridgingVALUES Brasil</p>
+      </div>
+
+      <div class="publicacoes__grid">
+        
+        <!-- Relatório 2: Sumário Executivo -->
+        <div class="pub-card fade-in">
+          <div>
+            <span class="pub-card__tag">Sumário Executivo</span>
+            <h4 class="pub-card__title">Sumário executivo</h4>
+            <p class="pub-card__desc">
+              Sumário executivo do Projeto BridgingVALUES Brasil
+            </p>
+          </div>
+          <a 
+            href="assets/relatorios/2_Sumario_executivo.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="pub-card__link"
+            aria-label="Baixar Sumário executivo em PDF (abre em nova aba)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            Baixar Relatório (PDF)
+          </a>
+        </div>
+
+        <!-- Relatório 3: Relatório científico geral -->
+        <div class="pub-card fade-in">
+          <div>
+            <span class="pub-card__tag">Relatório Científico</span>
+            <h4 class="pub-card__title">Relatório científico geral</h4>
+            <p class="pub-card__desc">
+              Relatório Científico Final do Projeto Bridging Values Brasil: Caso de Estudo Mosaico de Unidades de Conservação do Boqueirão da Onça, Bahia
+            </p>
+          </div>
+          <a 
+            href="assets/relatorios/3_BridgingValues%20Relatorio%20Geral%20CNPq.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="pub-card__link"
+            aria-label="Baixar Relatório científico geral em PDF (abre em nova aba)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            Baixar Relatório (PDF)
+          </a>
+        </div>
+
+        <!-- Relatório 4: Etapa 1 -->
+        <div class="pub-card fade-in">
+          <div>
+            <span class="pub-card__tag">Etapa 1</span>
+            <h4 class="pub-card__title">Relatório da Etapa de Campo Exploratório</h4>
+            <p class="pub-card__desc">
+              Relatório da Etapa de Campo Exploratório do Projeto Bridging Values Brasil: Caso de Estudo Mosaico de Unidades de Conservação do Boqueirão da Onça, Bahia
+            </p>
+          </div>
+          <a 
+            href="assets/relatorios/4_BridgingValues_Etapa%201%20Campo%20Exploratorio.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="pub-card__link"
+            aria-label="Baixar Relatório da Etapa de Campo Exploratório em PDF (abre em nova aba)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            Baixar Relatório (PDF)
+          </a>
+        </div>
+
+        <!-- Relatório 5: Etapa 2 -->
+        <div class="pub-card fade-in">
+          <div>
+            <span class="pub-card__tag">Etapa 2</span>
+            <h4 class="pub-card__title">Relatório da Etapa de Mapeamento de Atores</h4>
+            <p class="pub-card__desc">
+              Relatório da Etapa de Mapeamento de Atores do Projeto Bridging Values Brasil: Caso de Estudo Mosaico de Unidades de Conservação do Boqueirão da Onça, Bahia
+            </p>
+          </div>
+          <a 
+            href="assets/relatorios/5_BridgingValues_Etapa%202%20MapeamentoAtores.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="pub-card__link"
+            aria-label="Baixar Relatório da Etapa de Mapeamento de Atores em PDF (abre em nova aba)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            Baixar Relatório (PDF)
+          </a>
+        </div>
+
+        <!-- Relatório 6: Etapa 3 -->
+        <div class="pub-card fade-in">
+          <div>
+            <span class="pub-card__tag">Etapa 3</span>
+            <h4 class="pub-card__title">Relatório da Oficina 3H-CLD com valores da natureza</h4>
+            <p class="pub-card__desc">
+              Relatório da Oficina 3H-CLD com valores da natureza do Projeto Bridging Values Brasil: Caso de Estudo Mosaico de Unidades de Conservação do Boqueirão da Onça, Bahia
+            </p>
+          </div>
+          <a 
+            href="assets/relatorios/6_BridgingValues_Etapa%203%20Oficina%203H-CLD.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="pub-card__link"
+            aria-label="Baixar Relatório da Oficina 3H-CLD em PDF (abre em nova aba)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            Baixar Relatório (PDF)
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bloco 3: Artigos Científicos -->
+    <div class="pub-section-block" style="margin-top: 3rem;">
+      <div class="pub-block-header">
+        <h3 class="pub-block-title">Artigos Científicos</h3>
+      </div>
+      <div class="publicacoes__grid">
+        <!-- Artigo Enanppas -->
+        <div class="pub-card fade-in">
+          <div>
+            <span class="pub-card__tag">Artigo Científico</span>
+            <h4 class="pub-card__title">
+              Percepções locais sobre conservação e empreendimentos econômicos no sertão do São Francisco
+            </h4>
+            <p class="pub-card__desc">
+              Trabalho apresentado no Encontro Nacional da ANPPAS (2025) analisando a relação entre a conservação e projetos locais.
+            </p>
+          </div>
+          <a 
+            href="https://www.even3.com.br/anais/enanppas-2025/1216666-percepcoes-locais-sobre-conservacao-e-empreendimentos-economicos-no-sertao-do-sao-francisco/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="pub-card__link"
+            aria-label="Ler o artigo completo (abre em nova aba)"
+          >
+            Ler artigo completo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section--alt" id="equipe" aria-labelledby="equipe-title">
+  <div class="container">
+    <div class="equipe-wrap fade-in">
+      <h3 class="section-title" id="equipe-title">Equipe do Projeto</h3>
+      <div class="equipe-grid">
+        
+        <div class="equipe-group">
+          <h4>Coordenação do projeto</h4>
+          <ul>
+            <li>Ana Paula Dutra Aguiar</li>
+            <li>Evandro Albiach Branco</li>
+          </ul>
+        </div>
+
+        <div class="equipe-group">
+          <h4>Processos participativos nas comunidades</h4>
+          <ul>
+            <li>Amanda Sousa Silvino</li>
+            <li>Joaquim Laranjeira de Carvalho</li>
+          </ul>
+        </div>
+
+        <div class="equipe-group">
+          <h4>Pesquisadores associados</h4>
+          <ul>
+            <li>Sérgio Mantovani Paiva Pulice</li>
+            <li>Maria Paula Pires de Oliveira</li>
+            <li>Myanna Lahsen</li>
+          </ul>
+        </div>
+
+        <div class="equipe-group">
+          <h4>Organização dos mapas e dados espaciais</h4>
+          <ul>
+            <li>Jocilene Dantas Barros</li>
+            <li>Égon Henrique de Miranda</li>
+          </ul>
+        </div>
+
+        <div class="equipe-group">
+          <h4>Elaboração do site</h4>
+          <ul>
+            <li>Luis Henrique da Silva Campos</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="contato" aria-labelledby="feedback-title">
+  <div class="container">
+    <div class="feedback-wrap fade-in">
+      <span class="section-label">Contato</span>
+      <h3 class="section-title" id="feedback-title">Queremos te ouvir</h3>
+      <p class="section-subtitle">
+        Envie sua experiência ou opinião sobre o projeto.
+      </p>
+
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeQkbkULDAYo_f_ijz7iaRj5d7-rk19kpEZ6qsUYraRHDynxg/formResponse" method="POST" target="hidden_iframe" id="feedback-form" class="feedback-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="feedback-name" class="form-label">Nome completo e comunidade/instituição</label>
+            <input type="text" id="feedback-name" name="entry.1358190140" class="form-control" placeholder="Seu nome e onde atua (opcional)">
+          </div>
+
+          <div class="form-group">
+            <label for="feedback-email" class="form-label">E-mail *</label>
+            <input type="email" id="feedback-email" name="emailAddress" class="form-control" required placeholder="seu.email@exemplo.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-message" class="form-label">Escreva aqui suas impressões, sugestões, críticas ou outra mensagem que desejar *</label>
+          <textarea id="feedback-message" name="entry.2130080602" class="form-control" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary" id="btn-submit-feedback">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            <span>Enviar Mensagem</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Iframe oculto com propriedades robustas via CSS (evitando bloqueios de inline style por CSP) -->
+      <iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe" tabindex="-1" aria-hidden="true"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Modal de Sucesso -->
+<div id="feedback-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+  <div class="modal-content">
+    <div class="modal-icon" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    </div>
+    <h4 class="modal-title" id="modal-title">Sucesso!</h4>
+    <p class="modal-text">Sua mensagem foi enviada com sucesso. Agradecemos o seu feedback!</p>
+  </div>
+</div>
+<footer class="footer" aria-label="Rodapé">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div>
+        <p class="footer__brand-name">BridgingVALUES - Mosaico de UCs Boqueirão da Onça</p>
+        <p class="footer__brand-sub">
+          Plataforma desenvolvida pela Divisão de Impactos, Adaptação e Vulnerabilidade (DIIAV) do Instituto Nacional de Pesquisas Espaciais (INPE) para acesso a publicações, relatórios, mapas e dados geoespaciais gerados no âmbito do projeto BridgingVALUES, com foco no Mosaico de Unidades de Conservação do Boqueirão da Onça.
+        </p>
+      </div>
+
+      <div>
+        <p class="footer__heading">Navegação</p>
+        <ul class="footer__links" role="list">
+          <li><a href="#sobre">Sobre o Projeto</a></li>
+          <li><a href="#mapas">Mapas Interativos</a></li>
+          <li><a href="#download">Dados Espaciais</a></li>
+          <li><a href="#como-usar">Como Usar</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__heading">Parceiros</p>
+        <div class="footer__partners">
+          <a href="https://www.gov.br/inpe/" target="_blank" rel="noopener noreferrer"
+             class="footer__partner-logo-link" aria-label="INPE">
+            <img src="assets/images/logo_inpe.png"
+                 alt="INPE — Instituto Nacional de Pesquisas Espaciais"
+                 class="footer__partner-logo">
+          </a>
+          <a href="https://www.gov.br/cnpq/" target="_blank" rel="noopener noreferrer"
+             class="footer__partner-logo-link" aria-label="CNPq">
+            <img src="assets/images/logo_cnpq.png"
+                 alt="CNPq — Conselho Nacional de Desenvolvimento Científico e Tecnológico"
+                 class="footer__partner-logo">
+          </a>
+          <span class="footer__partner-badge">Biodiversa+</span>
+        </div>
+        <div class="footer__project">
+          <p class="footer__heading">Projeto</p>
+          <ul class="footer__links" role="list">
+            <li>
+              <a href="https://www.bridgingvalues.ch/" target="_blank" rel="noopener noreferrer">
+                BridgingVALUES ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 INPE — Instituto Nacional de Pesquisas Espaciais. Todos os direitos reservados.</p>
+      <p>Dados disponibilizados para uso científico e educacional. Crédito fotográfico: Eda Elif Tibet, 2025.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js?v=1794313931"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var json_GarimpodaQuixaba_9 = {"type":"FeatureCollection","name":"GarimpodaQuixaba_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","id":null,"Nome":"Garimpo da Quixaba"},"geometry":{"type":"Point","coordinates":[-41.535203683976029,-9.894067144895606]}}]}

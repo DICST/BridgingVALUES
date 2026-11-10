@@ -186,5 +186,6 @@ define('FEEDBACK_FIELD_TEXT',   'entry.2130080602');
 
 
 // ---------- Vídeo (Vimeo) ----------
-// Cole aqui o ID numérico do vídeo no Vimeo (ex.: '123456789'). Vazio = mostra aviso "em breve".
-define('VIMEO_ID', trim((string) (getenv('VIMEO_ID') ?: '')));
+// ID numérico do vídeo no Vimeo (vimeo.com/<ID>). Pode ser sobrescrito pela variável de ambiente VIMEO_ID.
+// Vazio = mostra o aviso "em breve".
+define('VIMEO_ID', trim((string) (getenv('VIMEO_ID') ?: '1245454834')));

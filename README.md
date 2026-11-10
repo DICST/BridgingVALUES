@@ -68,7 +68,7 @@ dados_espaciais/ (fora do repo) ──▶ build.php ──▶ downloads/*.zip
 ```bash
 # Pasta com os shapefiles brutos (não versionada); só necessária para gerar os ZIPs
 export ATLAS_DATA_DIR="/caminho/para/dados_espaciais/Dados_espaciais_e_projetos"
-export VIMEO_ID="123456789"          # opcional: ID do vídeo no Vimeo (vazio = "em breve")
+export VIMEO_ID="123456789"          # opcional: sobrescreve o ID do vídeo definido em config/app.php
 
 php -d extension=zip build.php        # ZIPs + index.html + en/index.html
 php -d extension=zip build.php html   # só as páginas
@@ -98,7 +98,8 @@ O workflow publica `index.html`, `en/`, `assets/`, `mapas/` e `downloads/`.
 
 ### Vídeo (Vimeo)
 
-Defina o ID numérico do vídeo em `VIMEO_ID` (variável de ambiente no build) e gere as páginas novamente.
+O filme é incorporado do Vimeo (<https://vimeo.com/1245454834>). Para trocar o vídeo, altere o ID em `VIMEO_ID`
+(`config/app.php`, ou a variável de ambiente de mesmo nome) e gere as páginas novamente. Com o ID vazio, a seção mostra "em breve".
 
 ## Limites e decisões de projeto
 
@@ -114,7 +115,7 @@ Defina o ID numérico do vídeo em `VIMEO_ID` (variável de ambiente no build) e
   *referrer policy* via `<meta>`; os scripts são todos do próprio site (sem JavaScript inline).
 - Links externos usam `rel="noopener noreferrer"`; o vídeo do Vimeo é carregado com `dnt=1`.
 - **Formulário de contato:** envia nome (opcional), e-mail e mensagem diretamente ao **Google Forms**; o site não armazena esses dados.
-- **Terceiros contatados pelo navegador:** Google Fonts (tipografia), Vimeo (vídeo, quando configurado), Google Forms (contato)
+- **Terceiros contatados pelo navegador:** Google Fonts (tipografia), Vimeo (vídeo), Google Forms (contato)
   e, nos mapas, imagens de satélite do Google (todos os 7) e serviços WMS públicos: SICAR (*Imóveis rurais*) e
   TerraBrasilis/INPE (*Uso e cobertura*). Ambos permitem acesso direto pelo navegador (CORS).
 - O proxy público `allorigins.win`, que o QGIS2Web inclui por padrão, foi removido dos mapas.

@@ -17,6 +17,7 @@
         src="https://player.vimeo.com/video/<?= htmlspecialchars(VIMEO_ID, ENT_QUOTES, 'UTF-8') ?>?dnt=1"
         title="Documentário Vozes da Caatinga"
         allow="fullscreen; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
         loading="lazy"
       ></iframe>

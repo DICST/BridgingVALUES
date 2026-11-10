@@ -100,7 +100,7 @@ function translate_en(string $html, array $datasets): array
         $n = 0;
         $html = preg_replace_callback('/(?<=>)(\s*)' . $flex($k) . '(\s*)(?=<)/u',
             fn($m) => $m[1] . $v . $m[2], $html, -1, $n);
-        if ($n === 0) $unused[] = 'text: ' . substr($k, 0, 70);
+        if ($n === 0 && !(VIMEO_ID !== '' && $k === 'O vídeo estará disponível em breve.')) $unused[] = 'text: ' . substr($k, 0, 70);
     }
     foreach ($titles as $k => $v) {
         $n = 0;
@@ -111,7 +111,7 @@ function translate_en(string $html, array $datasets): array
     foreach ($attr as $k => $v) {
         $n = 0;
         $html = preg_replace_callback('/(?<=")' . $flex($k) . '(?=")/u', fn($m) => $v, $html, -1, $n);
-        if ($n === 0 && $k !== 'Documentário Vozes da Caatinga') $unused[] = 'attr: ' . substr($k, 0, 70);
+        if ($n === 0 && !(VIMEO_ID === '' && $k === 'Documentário Vozes da Caatinga')) $unused[] = 'attr: ' . substr($k, 0, 70);
     }
 
     // Busca: inclui o nome em inglês em data-name
